@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
-      <meta name="viewport" content="width=divice-width, initial-scale=1">
         <meta charset="UTF-8">
         <title>SysCard</title>
+        <meta name="viewport" content="width=divice-width, initial-scale=1">
         <link rel="shortcut icon" href="../resources/images/favicon.ico">
         <link rel="stylesheet" type="text/css" href="../resources/assets/css/style.css" >
-
     </head>
     <body>
         <figure id="cambiado"></figure>
