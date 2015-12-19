@@ -27,7 +27,7 @@
                 </div><!-- button -->
             </section><!-- content -->
         </div><!-- container -->
-        <script src="../resources/assets/js/custom.js" type="text/javascript"></script>
         <script src="../resources/assets/js/jquery.min.js" type="text/javascript"></script>
+        <script src="../resources/assets/js/custom.js" type="text/javascript"></script>
     </body>
 </html>

@@ -2,7 +2,7 @@
 
 //AQUI CONECTAMOS A LA BASE DE DATOS DE POSTGRES
 //$conex = "host=localhost port=5432 dbname=BASEDATOS user=USUARIO password=CLAVE";
-    require("property.php");
+    require_once("property.php");
     $cnx = pg_connect($conex) or die ("<h1>Error de conexion.</h1> ". pg_last_error());
     session_start();
 

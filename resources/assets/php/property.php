@@ -5,4 +5,5 @@
     $user = "postgres";
     $password = "6638355";
     $conex = "host=$host port=$port dbname=$dbname user=$user password=$password";
+
  ?>
