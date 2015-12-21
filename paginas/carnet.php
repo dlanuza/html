@@ -35,13 +35,13 @@
             <!-- Main -->
             <article id="main">
                     <aside id="izq"><br></br>
-                        <form id="" action="" method="post">
-                            <input type="text" name="nombres" placeholder="Nombres" value="" required=""></br>
-                            <input type="text" name="apellidos" placeholder="Apellidos" value="" required=""></br>
-                            <input type="text" name="carrara" placeholder="Carrera" value="" required=""></br>
-                            <input type="text" name="facultad" placeholder="Facultad" value="" required=""></br>
-                            <input type="text" name="carnet" placeholder="Carnet" value="" required=""></br>
-                            <input type="text" name="url" placeholder="URL" value=""></br>
+                        <form id="formulario" action="../resources/assets/php/insert.php" method="post">
+                            <input type="text" id="nombres" name="nombres" placeholder="Nombres" value="" required=""></br>
+                            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" value="" required=""></br>
+                            <input type="text" id="carrara" name="carrara" placeholder="Carrera" value="" required=""></br>
+                            <input type="text" id="facultad" name="facultad" placeholder="Facultad" value="" required=""></br>
+                            <input type="text" id="carnet" name="carnet" placeholder="Carnet" value="" required=""></br>
+                            <input type="text" id="url" name="url" placeholder="URL" value=""></br>
                             <button value="Enviar" id="enviar" >Enviar</button></br>
                         </form>
                     </aside>
@@ -117,6 +117,7 @@
         <script src="../resources/assets/js/skel.min.js"></script>
         <script src="../resources/assets/js/util.js"></script>
         <script src="../resources/assets/js/main.js"></script>
+        <script src="../resources/assets/js/scripts.js"></script>
         <script>!window.jQuery && document.write(unescape('%3Cscript src="../resources/assets/js/jquery.min.js"%3E%3C/script%3E'))</script>
 
         <script src="../resources/assets/js/picedit.min.js" ></script>

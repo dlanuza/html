@@ -98,3 +98,19 @@
 	});
 
 })(jQuery);
+
+
+//var canva = document.getElementById("canvas1");
+
+$("#sub").click(function(){
+	var canvas  = document.getElementById("canvas2");
+	var dataURL = canvas.toDataURL();
+
+	//console.log(dataURL);
+	$("#img").attr('src', dataURL);
+	$("#url").val(dataURL);
+	//var d = document.getElementById("img").innerHTML = img.src = canva.toDataURL("image/png"));
+	//alert(d);
+	//document.getElementById("img").innerHTML = img.src = canva.toDataURL("image/png"));
+});
+//console.log(canva);
