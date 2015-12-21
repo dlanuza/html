@@ -35,7 +35,7 @@
             <!-- Main -->
             <article id="main">
                     <aside id="izq"><br></br>
-                        <form id="formulario" action="../resources/assets/php/insert.php" method="post">
+                        <form id="formulario">
                             <input type="text" id="nombres" name="nombres" placeholder="Nombres" value="" required=""></br>
                             <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" value="" required=""></br>
                             <input type="text" id="carrara" name="carrara" placeholder="Carrera" value="" required=""></br>
@@ -46,6 +46,9 @@
                         </form>
                     </aside>
                     <div id="cen" >
+                        <div id="respuesta" >
+
+                		</div>
                         <div id="car">
                             <div id="conimg">
                                 <img id="img" src="../resources/images/cam.png" alt="" />

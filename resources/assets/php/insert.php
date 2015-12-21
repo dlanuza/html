@@ -1,28 +1,26 @@
 <?php
-require_once("property.php");
+require("property.php");
 $cnx = pg_connect($conex) or die ("<h1>Error de conexion.</h1> ". pg_last_error());
 ?>
-        <script type="text/javascript">
-            //console.log($cnx);
-        </script>
+
 <?php
 
-$nombres = pg_escape_string($_POST['nombres']);
-$apellidos = pg_escape_string($_POST['apellidos']);
-$carrera = pg_escape_string($_POST['carrera']);
-$facultad = pg_escape_string($_POST['facultad']);
-$carnet = pg_escape_string($_POST['carnet']);
-$url = pg_escape_string($_POST['url']);
 
-if($_POST){
-    $result = pg_query("INSERT INTO estudiante(nombres, apellidos, carrera, facultad, carnet)VALUES('".$nombres."', '".$apellidos."', '".$carrera."', '".$facultad."', '".$carnet."')");
-    if(!$result){
+    $nombres = $_POST['nombres'];
+    $apellidos = $_POST['apellidos'];
+    $carrera = $_POST['carrera'];
+    $facultad = $_POST['facultad'];
+    $carnet = $_POST['carnet'];
+    //$url = $_POST['url'];
+    $result = pg_query($cnx, "INSERT INTO estudiante(nombres, apellidos, carrera, facultad, carnet)VALUES('".$nombres."', '".$apellidos."', '".$carrera."', '".$facultad."', '".$carnet."')");
+	echo "Fallo registro: $result<br>";
+
         ?>
                 <script type="text/javascript">
                     console.log("error en la insercion");
                 </script>
         <?php
-        echo "ha ocurrido un error";
+
 
 ?>
         <script type="text/javascript">
@@ -30,23 +28,9 @@ if($_POST){
         </script>
 <?php
 
-    }else{
-        ?>
-                <script type="text/javascript">
-                    console.log("insercion sin error");
-                </script>
-        <?php
-        echo 'no ha ocurrido un error';
-    }
+
     //pg_free_result($result);
-}else{
-    ?>
-            <script type="text/javascript">
-                console.log("error en los datos");
-            </script>
-    <?php
-    echo 'Debe especificar todos los datos';
-}
+
 pg_close();
 
 

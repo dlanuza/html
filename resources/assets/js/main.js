@@ -106,7 +106,7 @@ $("#sub").click(function(){
 	var canvas  = document.getElementById("canvas2");
 	var dataURL = canvas.toDataURL();
 
-	//console.log(dataURL);
+	console.log(dataURL);
 	$("#img").attr('src', dataURL);
 	$("#url").val(dataURL);
 	//var d = document.getElementById("img").innerHTML = img.src = canva.toDataURL("image/png"));
